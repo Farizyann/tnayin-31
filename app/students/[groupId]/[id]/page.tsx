@@ -2,9 +2,9 @@ import StudentDetails from '@/app/components/StudentDetails';
 import { Metadata } from 'next';
 import React from 'react'
 
-export default function StudentPage() {
+export default function StudentPage({params}:any) {
   return (
-    <StudentDetails/>
+    <StudentDetails groupId={params.groupId} id={params.id}/>
   )
 }
 

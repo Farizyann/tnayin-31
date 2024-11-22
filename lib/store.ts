@@ -1,8 +1,10 @@
+import { studentslice } from './features/student/studentSlice';
+import { groupslice } from './features/group/groupSlice';
 import type { Action, ThunkAction } from "@reduxjs/toolkit";
 import { combineSlices, configureStore } from "@reduxjs/toolkit";
 
 
-const rootReducer = combineSlices();
+const rootReducer = combineSlices(groupslice, studentslice);
 export type RootState = ReturnType<typeof rootReducer>;
 
 export const makeStore = () => {

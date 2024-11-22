@@ -1,9 +1,12 @@
+'use client'
 import React from 'react'
 
-const StudentDetails = () => {
+const StudentDetails = ({ groupId, id }: { id: number; groupId: number }) => {
+  console.log(groupId, id);
+  
   return (
     <div>
-      
+      ..
     </div>
   )
 }

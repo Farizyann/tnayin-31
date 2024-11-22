@@ -4,7 +4,7 @@ export const data: { group: IGroup; groups: IGroup[]; student: IStudents } = {
   group: {} as IGroup, 
   groups: [
     { 
-      id: 101, 
+      id: 1, 
       name: "Group A", 
       students: [
         { id: 1, name: "John", surname: "Doe" },
@@ -12,11 +12,11 @@ export const data: { group: IGroup; groups: IGroup[]; student: IStudents } = {
       ] 
     },
     { 
-      id: 102, 
+      id: 2, 
       name: "Group B", 
       students: [
-        { id: 3, name: "Alice", surname: "Johnson" },
-        { id: 4, name: "Bob", surname: "Brown" }
+        { id: 1, name: "Alice", surname: "Johnson" },
+        { id: 2, name: "Bob", surname: "Brown" }
       ] 
     }
   ],
